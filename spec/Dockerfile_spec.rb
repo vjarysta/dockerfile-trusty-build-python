@@ -89,6 +89,13 @@ describe 'Dockerfile' do
         expect(package('libpython3.4-dev')).to be_installed
     end
 
+    describe command('locale') do
+        its(:stdout) { should match /LANG=en_US.UTF-8/ }
+        its(:stdout) { should match /LC_ALL=en_US.UTF-8/ }
+        its(:exit_status) { should eq 0 }
+    end
+
+
     # Functions
     #----------
 
