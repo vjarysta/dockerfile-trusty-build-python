@@ -11,5 +11,6 @@ RUN apt-get update && \
 
 # Locale management
 RUN locale-gen en_US.UTF-8
+RUN echo 'LC_ALL=en_US.UTF-8' > /etc/default/locale
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
