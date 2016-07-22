@@ -85,6 +85,7 @@ describe 'Dockerfile' do
         expect(package('python3')).to be_installed
         expect(package('python-pip')).to be_installed
         expect(package('python-virtualenv')).to be_installed
+        expect(package('libffi-dev')).to be_installed
         expect(package('libpython2.7-dev')).to be_installed
         expect(package('libpython3.4-dev')).to be_installed
     end
