@@ -8,7 +8,8 @@ RUN apt-get update && \
                         python-virtualenv \
                         libffi-dev \
                         libpython2.7-dev \
-                        libpython3.4-dev
+                        libpython3.4-dev \
+                        libssl-dev
 
 # Locale management
 RUN locale-gen en_US.UTF-8

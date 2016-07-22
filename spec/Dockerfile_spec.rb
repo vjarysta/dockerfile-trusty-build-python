@@ -88,6 +88,7 @@ describe 'Dockerfile' do
         expect(package('libffi-dev')).to be_installed
         expect(package('libpython2.7-dev')).to be_installed
         expect(package('libpython3.4-dev')).to be_installed
+        expect(package('libssl-dev')).to be_installed
     end
 
     describe command('locale') do
