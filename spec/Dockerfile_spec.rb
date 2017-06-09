@@ -89,6 +89,8 @@ describe 'Dockerfile' do
         expect(package('libpython2.7-dev')).to be_installed
         expect(package('libpython3.4-dev')).to be_installed
         expect(package('libssl-dev')).to be_installed
+        expect(package('libxml2-dev')).to be_installed
+        expect(package('libxslt1-dev')).to be_installed
     end
 
     describe command('locale') do
@@ -106,4 +108,3 @@ describe 'Dockerfile' do
         command('lsb_release -a').stdout
     end
 end
-

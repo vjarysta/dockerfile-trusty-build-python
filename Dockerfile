@@ -9,7 +9,9 @@ RUN apt-get update && \
                         libffi-dev \
                         libpython2.7-dev \
                         libpython3.4-dev \
-                        libssl-dev
+                        libssl-dev \
+                        libxml2-dev \
+                        libxslt1-dev
 
 # Locale management
 RUN locale-gen en_US.UTF-8
